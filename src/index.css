@@ -1,13 +1,50 @@
-body {
+body{
+  color: gray;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Navigation bar*/
+.parent-div{
+  width: 100%;
+  background-color: #e4e4db;
+}
+
+nav{
+  margin: auto;
+  height: 70px;
+  width: 80%;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wine{
+  font-size: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.ol li{
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.navLink{
+  color:gray;
+  text-decoration: none;
+}
+
+.ol li:hover{
+  text-decoration: underline;
+  opacity: 0.5;
+  transition: .5s;
+  color: #000000;
+}
+
+/*Home*/
+section.home{
+  background-image: url('./components/images/cocktail2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
