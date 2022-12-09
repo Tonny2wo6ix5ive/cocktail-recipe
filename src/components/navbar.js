@@ -7,21 +7,12 @@ const NavBar = ({Links}) => {
 
     return ( 
         <div className='parent-div'>
-            <nav>
-                <input type="checkbox" name="" id="check"/>
-                <label for="check">
-                    <i className='menu'>
-                         <ion-icon name="wine-outline"></ion-icon>
-                    </i>
-                </label>
-                <label for="" className="wine">
-                    <ion-icon name="wine-outline"></ion-icon>
-                </label>
-                <ul>
+            <nav className='nav'>
+                <ol className='ol' type='i'>
                     {Links.map((value)=>(
-                        <li className='nav-li' key={value.key}><a className='nav-a' href={value.url}>{value.name}</a></li>
+                        <li className='li' key={value.key}><a className='url' href={value.url}>{value.name}</a></li>
                     ))}
-                </ul>
+                </ol>
             </nav>
         </div>
      );

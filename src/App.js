@@ -8,8 +8,8 @@ function App() {
 
   const [Links, setLinks] = useState([
     {name:"Home", url:'#', key:1},
-    {name:"Non-Alcoholic", url:'#', key:2},
-    {name:"Alcoholic", url:'#', key:3},
+    {name:"Popular", url:'#', key:2},
+    {name:"Latest", url:'#', key:3},
     {name:"About", url:'#', key:4},
   ]);
 
