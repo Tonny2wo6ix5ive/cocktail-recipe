@@ -4,32 +4,7 @@ body{
   font-family:Arial, Helvetica, sans-serif;
 }
 
-/*navigation*/
-.parent-div{
-  background-color: #000000;
-  line-height: 70px;
-  height: 90px;
-}
 
-.nav{
-  display: flex;
-  justify-content: center;
-  color: #f3f3f3;
-  width: 70%;
-  margin: 0 auto;
-}
-
-.ol{
-  display: flex;
-}
-
-.li{
-  margin: 0 40px;
-}
-
-a{
-  color: #f3f3f3;
-}
 
 /*Home*/
 section.home{

@@ -1,27 +1,25 @@
-import { useState } from 'react';
-import style from '../src/index'
-import All from './components/all';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home';
 import NavBar from './components/navbar';
+import All from './components/all'
 
 function App() {
 
-  const [Links, setLinks] = useState([
-    {name:"Home", url:'#', key:1},
-    {name:"Popular", url:'#', key:2},
-    {name:"Latest", url:'#', key:3},
-    {name:"About", url:'#', key:4},
-  ]);
+  let Links = [
+    {name:"Home", url:'/', key:1},
+    {name:"Popular", url:'/all', key:2},
+    {name:"Latest", url:'/all', key:3},
+    {name:"About", url:'', key:4},
+  ];
 
   return (
-    <div className="App">
+    <Router>
       <NavBar Links={Links}/>
-      <Home/>
-      <div>
-        <All/>
-      </div>
-    </div>
-    
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/all' element={<All/>}/>
+      </Routes>
+    </Router>
   );
 }
 

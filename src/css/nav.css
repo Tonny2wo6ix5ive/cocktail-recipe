@@ -1,0 +1,89 @@
+/*navigation*/
+
+.hamburger {
+    display: none;
+  }
+  
+  .parent-div{
+    background-color: #000000;
+    line-height: 70px;
+    height: 90px;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: center;
+    color: #f3f3f3;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .ol{
+    display: flex;
+  }
+  
+  .li{
+    margin: 0 40px;
+  }
+  
+  a{
+    color: #f3f3f3;
+  }
+  
+  label{
+    display: none;
+  }
+  
+  @media(max-width:600px){
+    .hamburger{
+      display: block;
+      color:#f3f3f3;
+      background-color: #000000;
+      font-size: 50px;
+      position: relative;
+      right: -40%;
+    }
+  
+    nav{
+      width: 100%;
+    }
+  
+    .ol{
+      display: none;
+      color:#f3f3f3;
+      /*navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar)*/
+      position: absolute;
+      top: 60px;
+      left: 0;
+      /* stacks the li tags vertically*/ 
+      flex-direction: column;
+     /* makes menu span full height and width*/
+      width: 100%;
+      height: calc(100vh - 77px);
+      background-color: #000000;
+      border-top: 1px solid black;  
+      justify-content: center;  
+    }
+  
+    .li{
+      text-align: center;
+      margin: 0;
+      list-style: none;
+      width: 100%;
+    }
+  
+    Link{
+      color: black;
+      /* increases the surface area of the anchor tag to span the full width of the menu*/
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+  }
+  
+
+  @media (max-width:600px){
+    .navigation-menu.expanded .ol{
+      display: block;    
+    }
+  }
