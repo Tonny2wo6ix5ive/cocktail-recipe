@@ -26,23 +26,29 @@
   .li{
     margin: 0 40px;
   }
-  
-  a{
-    color: #f3f3f3;
-  }
-  
-  label{
-    display: none;
-  }
+
+.link{
+    color:#f3f3f3;
+}
+
+.link:hover{
+    color:tomato;
+    transition: ease-in-out .3s;
+}   
   
   @media(max-width:600px){
     .hamburger{
-      display: block;
-      color:#f3f3f3;
-      background-color: #000000;
-      font-size: 50px;
-      position: relative;
-      right: -40%;
+        color: tomato;
+        transition: ease-in-out .5s;
+        display: block;
+        background-color: #000000;
+        font-size: 50px;
+        position: relative;
+        right: -40%;
+        border: none;
+    }
+    .hamburger:hover{
+        color: #f3f3f3;
     }
   
     nav{
@@ -78,6 +84,11 @@
       /* increases the surface area of the anchor tag to span the full width of the menu*/
       width: 100%;
       padding: 1.5rem 0;
+    }
+
+
+    .home-h1{
+        font-size: 50px;
     }
   }
   

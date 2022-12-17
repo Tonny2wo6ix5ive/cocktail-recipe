@@ -25,7 +25,7 @@ const NavBar = ({Links}) => {
           }>
                 <ol className='ol' type='i'>
                     {Links.map((value)=>(
-                        <li className='li' key={value.key}><Link onClick={scrollUp} to={value.url}>{value.name}</Link></li>
+                        <li className='li' key={value.key}><Link className='link' onClick={scrollUp} to={value.url}>{value.name}</Link></li>
                     ))}
                 </ol>
             </div>

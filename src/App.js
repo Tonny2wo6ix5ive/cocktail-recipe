@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home';
 import NavBar from './components/navbar';
 import All from './components/all'
+import Footer from './components/footer';
 
 function App() {
 
@@ -17,8 +18,8 @@ function App() {
       <NavBar Links={Links}/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/all' element={<All/>}/>
       </Routes>
+      <Footer/>
     </Router>
   );
 }
